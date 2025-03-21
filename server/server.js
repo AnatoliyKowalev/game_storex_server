@@ -4,6 +4,7 @@ const router = jsonServer.router("server/db.json");
 const middlewares = jsonServer.defaults();
 
 // Enable CORS for API access from frontend
+// Unsleep
 server.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
